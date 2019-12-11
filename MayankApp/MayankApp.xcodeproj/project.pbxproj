@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AC1C11A423A1145D00F0D533 /* mayank.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC1C11A323A1145D00F0D533 /* mayank.storyboard */; };
+		AC1C11A723A1150400F0D533 /* BaseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1C11A623A1150400F0D533 /* BaseClass.swift */; };
 		AC29B6F923A10EBF00572458 /* MayankApp.h in Headers */ = {isa = PBXBuildFile; fileRef = AC29B6F723A10EBF00572458 /* MayankApp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		AC1C11A323A1145D00F0D533 /* mayank.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = mayank.storyboard; sourceTree = "<group>"; };
+		AC1C11A623A1150400F0D533 /* BaseClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseClass.swift; sourceTree = "<group>"; };
 		AC29B6F423A10EBF00572458 /* MayankApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MayankApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC29B6F723A10EBF00572458 /* MayankApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MayankApp.h; sourceTree = "<group>"; };
 		AC29B6F823A10EBF00572458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,6 +45,7 @@
 		AC29B6EA23A10EBF00572458 = {
 			isa = PBXGroup;
 			children = (
+				AC1C11A623A1150400F0D533 /* BaseClass.swift */,
 				AC29B71D23A10EF300572458 /* MaxApp.xcodeproj */,
 				AC29B6F623A10EBF00572458 /* MayankApp */,
 				AC29B6F523A10EBF00572458 /* Products */,
@@ -118,6 +121,7 @@
 				TargetAttributes = {
 					AC29B6F323A10EBF00572458 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -170,6 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC1C11A723A1150400F0D533 /* BaseClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +306,7 @@
 		AC29B6FD23A10EBF00572458 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -317,6 +323,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = asasas.MayankApp;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -325,6 +332,7 @@
 		AC29B6FE23A10EBF00572458 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;

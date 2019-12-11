@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "MayankApp"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "A CocoaPods library written in Swift"
 
   spec.description  = <<-DESC
@@ -17,5 +17,13 @@ This CocoaPods library helps you perform testing.
 
   spec.source        = { :git => "https://github.com/legen12345dairy/MayankApp.git", :tag => "#{spec.version}" }
   spec.source_files  = "MayankApp/**/*.{h,m,swift}"
+spec.resource_bundles = {
+    'MayankApp' => [
+        'MayankApp/**/*.storyboard',
+        'MayankApp/**/*.xib',
+         'MayankApp/**/*.xcodeproj'
+
+    ]
+  }
 
 end
